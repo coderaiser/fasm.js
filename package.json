@@ -6,6 +6,9 @@
   "description": "Flat Assembler ELF inside Blink Wasm",
   "homepage": "https://github.com/coderaiser/fasm.js#readme",
   "main": "lib/index.js",
+  "bin": {
+    "fasm": "./bin/fasm.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coderaiser/putout.git"
