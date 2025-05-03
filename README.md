@@ -80,6 +80,12 @@ const source = `
 const [places, buffer, output] = await translate(source);
 ```
 
+## Related
+
+- [x86-64 Playground](https://app.x64.halb.it/);
+- [Blink tiniest x86-64-linux emulator](https://github.com/jart/blink);
+- [Flat Assembler](https://flatassembler.net/);
+
 ## License
 
 MIT
