@@ -2,6 +2,7 @@
 test
 yarn-error.log
 
+examples
 coverage
 eslint.config.*
 *.config.*
