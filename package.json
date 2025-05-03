@@ -22,11 +22,10 @@
   },
   "dependencies": {},
   "keywords": [
-    "putout",
-    "putout-plugin",
-    "putout-plugin-remove",
-    "plugin",
-    "debugger"
+    "fasm",
+    "assembler",
+    "elf",
+    "emulator"
   ],
   "devDependencies": {
     "@putout/eslint-flat": "^3.0.0",
