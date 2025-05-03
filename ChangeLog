@@ -1,0 +1,8 @@
+2025.05.03, v1.0.1
+
+fix:
+- 8972612 package: bin
+- de72441 package: keywords
+
+feature:
+- 16852d9 fasm.js: add
