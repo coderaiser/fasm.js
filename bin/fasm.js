@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import process from 'node:process';
 import {readFileSync, writeFileSync} from 'node:fs';
 import {translate} from '../lib/index.js';
@@ -5,7 +6,8 @@ import {translate} from '../lib/index.js';
 const [name] = process.argv.slice(2);
 
 if (!name) {
-    console.error('fasm [name]');
+    console.log('flat assembler  version 1.73.32');
+    console.log('usage: fasm [name]');
     process.exit(1);
 }
 
