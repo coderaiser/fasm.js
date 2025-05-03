@@ -1,3 +1,8 @@
+2025.05.03, v1.0.5
+
+fix:
+- 7ad2896 fasm.js: npm bundle
+
 2025.05.03, v1.0.4
 
 feature:
