@@ -2,7 +2,10 @@
 test
 yarn-error.log
 
-examples
+example
 coverage
 eslint.config.*
 *.config.*
+
+assemblers/gnu*
+dist/blinkenlib_web*
