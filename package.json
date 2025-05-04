@@ -23,7 +23,9 @@
     "coverage": "madrun coverage",
     "report": "madrun report"
   },
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^4.4.0"
+  },
   "keywords": [
     "fasm",
     "assembler",
@@ -38,7 +40,9 @@
     "eslint-plugin-n": "^17.0.0",
     "eslint-plugin-putout": "^26.0.0",
     "madrun": "^11.0.0",
-    "nodemon": "^3.0.1"
+    "montag": "^1.2.1",
+    "nodemon": "^3.0.1",
+    "supertape": "^11.1.0"
   },
   "license": "MIT",
   "engines": {

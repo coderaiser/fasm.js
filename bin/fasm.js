@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import process from 'node:process';
 import {readFileSync, writeFileSync} from 'node:fs';
 import {translate} from '../lib/index.js';
@@ -18,4 +19,3 @@ if (!places.length)
     writeFileSync(name.replace('.asm', '.bin'), buffer);
 
 process.stdout.write(stdout);
-

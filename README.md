@@ -27,22 +27,23 @@ fasm hello.asm
 
 ```js
 import {translate} from 'fasm.js';
+
 const source = `
     format ELF64 executable 3
     segment readable executable
     entry $
-
+    
     _start:
       ; Set up arguments for print function
       mov rdi, 1
       lea rsi, [msg]
       mov rdx, msg_size
       call print
-
+      
       ; Set up arguments for exit function
       xor rdi, rdi
       call exit
-
+    
     ; Print function
     ; Arguments:
     ;   rdi - File descriptor (1 for stdout)
@@ -57,7 +58,7 @@ const source = `
       syscall
       pop rbp
       ret
-
+    
     ; Exit function
     ; Arguments:
     ;   rdi - Exit code
@@ -70,8 +71,8 @@ const source = `
       syscall
       pop rbp
       ret
-
-
+    
+    
     segment readable writeable
     msg db 'Hello 64-bit world!',0xA
     msg_size = $-msg
