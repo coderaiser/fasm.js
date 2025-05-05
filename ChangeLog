@@ -1,3 +1,8 @@
+2025.05.05, v1.0.7
+
+fix:
+- 34e17e3 fasm.js: arguments order
+
 2025.05.05, v1.0.6
 
 feature:
