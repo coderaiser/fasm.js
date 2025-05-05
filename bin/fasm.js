@@ -13,7 +13,7 @@ if (!name) {
 }
 
 const source = readFileSync(name, 'utf8');
-const [places, buffer, stdout] = await translate(source);
+const [buffer, places, stdout] = await translate(source);
 
 if (!places.length)
     writeFileSync(name.replace('.asm', '.bin'), buffer);

@@ -78,7 +78,7 @@ const source = `
     msg_size = $-msg
 `;
 
-const [places, buffer, output] = await translate(source);
+const [buffer, places, output] = await translate(source);
 ```
 
 ## Related

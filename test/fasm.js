@@ -9,7 +9,7 @@ test('fasm.js: translate', async (t) => {
         xor ax, ax
     `;
     
-    const [, result] = await translate(source);
+    const [result] = await translate(source);
     const expected = new Uint8Array([0x31, 0xc0]);
     
     t.deepEqual(result, expected);
