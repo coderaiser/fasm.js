@@ -15,3 +15,16 @@ test('fasm.js: translate', async (t) => {
     t.deepEqual(result, expected);
     t.end();
 });
+
+test('fasm.js: translate: error', async (t) => {
+    const source = montag`
+        if (a)
+    `;
+    
+    const [, errors] = await translate(source);
+    const [first] = errors;
+    const expected = `error: missing end directive: 'if (a)'`;
+    
+    t.equal(first.message, expected);
+    t.end();
+});
