@@ -1,3 +1,8 @@
+2025.05.23, v1.1.0
+
+feature:
+- 433636d fasm.js: places: add instruction
+
 2025.05.05, v1.0.7
 
 fix:
