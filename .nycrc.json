@@ -4,6 +4,8 @@
     "exclude": [
         "**/*.spec.*",
         "**/fixture",
+        "**/blink",
+        "**/bin",
         "test",
         ".*.*",
         "eslint.config.js",

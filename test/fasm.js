@@ -17,9 +17,7 @@ test('fasm.js: translate', async (t) => {
 });
 
 test('fasm.js: translate: error', async (t) => {
-    const source = montag`
-        if (a)
-    `;
+    const source = '    if (a)';
     
     const [, errors] = await translate(source);
     const [first] = errors;
