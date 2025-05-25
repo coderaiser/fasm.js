@@ -21,7 +21,7 @@ test('fasm.js: translate: error', async (t) => {
     
     const [, errors] = await translate(source);
     const [first] = errors;
-    const expected = `error: missing end directive: 'if (a)'`;
+    const expected = `missing end directive: 'if (a)'`;
     
     t.equal(first.message, expected);
     t.end();
